@@ -1,28 +1,28 @@
-# campus-market
+# CampusMarket
+一个电商软件demo
 
-## Project setup
+## 项目安装
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### 开发编译和热重载
 ```
 yarn serve
 ```
 
-### Compiles and minifies for production
+### 项目编译
 ```
 yarn build
 ```
 
-### Lints and fixes files
+### 检查和修复文件
 ```
 yarn lint
 ```
 
-### Customize configuration
+### 自定义配置
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-# CampusMarket
-一个电商软件demo
+
 
