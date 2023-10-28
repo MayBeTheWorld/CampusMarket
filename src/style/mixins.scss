@@ -1,0 +1,7 @@
+// 这里定义一些可以复用的混入css效果
+@mixin ellipsis {
+    // 实现文字单行展示，多余展示省略号
+    overflow: hidden; // 多余隐藏
+    white-space: nowrap; // 不换行
+    text-overflow: ellipsis; //
+}

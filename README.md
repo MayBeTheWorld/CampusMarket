@@ -1,4 +1,4 @@
-# jingdong
+# campus-market
 
 ## Project setup
 ```
