@@ -20,7 +20,7 @@ export default {
   setup() {
     const dockerList = reactive([
       { icon: '&#xe603;', text: '首页', to: { name: 'Home' } },
-      { icon: '&#xe601;', text: '购物车', to: { name: 'Cart' } },
+      { icon: '&#xe601;', text: '购物车', to: { name: 'CartList' } },
       { icon: '&#xe606;', text: '订单', to: { name: 'Home' } },
       { icon: '&#xe605;', text: '我的', to: { name: 'Home' } }
     ])

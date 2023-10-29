@@ -8,7 +8,12 @@ const setLocalCartList = (state) => {
 }
 
 const getLocalCartList = () => {
-  return JSON.parse(localStorage.cartList) || {}
+  // { shopId: { shopName: '', productList: {productId: {} } } }
+  try {
+    return JSON.parse(localStorage.cartList)
+  } catch (e) {
+    return {}
+  }
 }
 
 export default createStore({
@@ -76,6 +81,10 @@ export default createStore({
         }
       }
       setLocalCartList(state)
+    },
+    // 清空购物车
+    clearCartData (state, shopId) {
+      state.cartList[shopId].productList = {}
     }
   },
   actions: {

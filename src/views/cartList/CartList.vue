@@ -1,12 +1,12 @@
 <template>
   <div>
-    123
+    CartList
   </div>
 </template>
 
 <script>
 export default {
-  name: 'CartView'
+  name: 'CartList'
 }
 </script>
 
