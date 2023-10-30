@@ -17,6 +17,7 @@ import { useRouter } from 'vue-router'
 import { get } from '../../utils/request'
 import ShopInfo from '../../components/ShopInfo'
 
+// 附件商家逻辑
 const useNearbyListEffect = () => {
   const nearbyList = ref([])
   const getNearbyList = async () => {
@@ -28,6 +29,7 @@ const useNearbyListEffect = () => {
   return { nearbyList, getNearbyList }
 }
 
+// 商家商品页面跳转逻辑
 const useShopEffect = () => {
   const router = useRouter()
   const handleClick = (id) => {

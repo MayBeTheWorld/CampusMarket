@@ -1,4 +1,4 @@
-<!-- 此为注册页面 -->
+<!-- 注册页面 -->
 <template>
   <div class="wrapper">
     <img class="wrapper__img" src="http://www.dell-lee.com/imgs/vue3/user.png" alt="">

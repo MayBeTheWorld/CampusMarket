@@ -1,3 +1,4 @@
+<!-- 顶部区域组件 -->
 <template>
   <div class="top">
     <div class="top__bgcolor"></div>

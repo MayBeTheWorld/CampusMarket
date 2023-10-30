@@ -1,3 +1,4 @@
+<!-- 确认订单页面 -->
 <template>
   <div class="wrapper">
     <TopArea />

@@ -1,3 +1,4 @@
+<!-- 产品列表组件 -->
 <template>
   <div class="products">
     <div class="products__title">

@@ -4,14 +4,13 @@
     <Static-part />
     <Nearby-part />
   </div>
-
-  <Docker-part />
+  <Docker-part :currentIndex="0"/>
 </template>
 
 <script>
 import StaticPart from './StaticPart.vue'
 import NearbyPart from './NearbyPart.vue'
-import DockerPart from './DockerPart.vue'
+import DockerPart from '../../components/DockerPart.vue'
 export default {
   name: 'HomeView',
   components: {
@@ -23,7 +22,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .wrapper {
   overflow-y: auto; //允许纵向滚动
   position: absolute;

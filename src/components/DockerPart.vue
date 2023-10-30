@@ -1,7 +1,7 @@
 <!-- 底部一级页面栏组件 -->
 <template>
   <div class="docker">
-    <div v-for="(item, index) in dockerList" :class="{ 'docker__item': true, 'docker__item--active': index === 0 }"
+    <div v-for="(item, index) in dockerList" :class="{ 'docker__item': true, 'docker__item--active': index === currentIndex }"
       class="docker__item" :key="item.icon">
       <!-- 这里使用的v-html可以对符号编码进行转义  -->
       <router-link :to="item.to">
@@ -16,12 +16,12 @@
 import { reactive } from 'vue'
 export default {
   name: 'DockerPart',
-  // eslint-disable-next-line space-before-function-paren
-  setup() {
+  props: ['currentIndex'],
+  setup () {
     const dockerList = reactive([
       { icon: '&#xe603;', text: '首页', to: { name: 'Home' } },
       { icon: '&#xe601;', text: '购物车', to: { name: 'CartList' } },
-      { icon: '&#xe606;', text: '订单', to: { name: 'Home' } },
+      { icon: '&#xe606;', text: '订单', to: { name: 'OrderList' } },
       { icon: '&#xe605;', text: '我的', to: { name: 'Home' } }
     ])
     return { dockerList }
@@ -30,7 +30,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../style/variables.scss';
+@import '../style/variables.scss';
 
 .docker {
   display: flex;

@@ -1,3 +1,4 @@
+<!-- 商家商品页面 -->
 <template lang="">
   <div class="wrapper">
     <div class="search">

@@ -15,6 +15,10 @@ const routes = [
     name: 'OrderConfirmation',
     component: () => import(/* webpackChunkName: "orderConfirmation" */'../views/orderConfirmation/OrderConfirmation.vue')
   }, {
+    path: '/orderList',
+    name: 'OrderList',
+    component: () => import(/* webpackChunkName: "orderList" */'../views/orderList/OrderList.vue')
+  }, {
     path: '/login',
     name: 'Login',
     component: () => import(/* webpackChunkName: "login" */'../views/login/Login.vue'),
